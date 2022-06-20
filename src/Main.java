@@ -7,6 +7,7 @@ public class Main {
         System.out.println("1.Employee Attendance");
         System.out.println("2.Wage per day for the Employee");
         System.out.println("3.Wage per day for the Part Time Employee");
+        System.out.println("4.Wage Calculation Using Switch Case");
 
         int choice = input.nextInt();
 
@@ -19,6 +20,9 @@ public class Main {
                 break;
             case 3:
                 Employee.partTimeEmployee();
+                break;
+            case 4:
+                Employee.empWageSwitchCase();
                 break;
             default:
                 System.out.println("Choose the Correct Option");
