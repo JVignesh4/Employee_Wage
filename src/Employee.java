@@ -146,4 +146,8 @@ public class Employee {
         return totalWage;
     }
 
+    public void multiCompanyEmpWage(){
+        calculateEmpWageForCompany("DMart", 20,20,100);
+        calculateEmpWageForCompany("Reliance", 20,22,98);
+    }
 }
