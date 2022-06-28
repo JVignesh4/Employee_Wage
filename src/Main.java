@@ -2,38 +2,41 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        Employee employee = new Employee();
         Scanner input = new Scanner(System.in);
+        System.out.println("Welcome To Employee Wage Problem");
         System.out.println("1.Employee Attendance");
         System.out.println("2.Wage per day for the Employee");
         System.out.println("3.Wage per day for the Part Time Employee");
         System.out.println("4.Wage Calculation Using Switch Case");
         System.out.println("5.Employee Wage for 20 Days");
         System.out.println("6.Employee Monthly Wage");
+        System.out.println("7.Employee Monthly Wage For a Particular Company");
         System.out.println("Enter the choice: ");
         int choice = input.nextInt();
 
         switch (choice) {
             case 1:
-                Employee.attendanceOfEmployee();
+                employee.attendanceOfEmployee();
                 break;
             case 2:
-                Employee.wageOfEmployee();
+                employee.wageOfEmployee();
                 break;
             case 3:
-                Employee.partTimeEmployee();
+                employee.partTimeEmployee();
                 break;
             case 4:
-                Employee.empWageSwitchCase();
+                employee.empWageSwitchCase();
                 break;
             case 5:
-                Employee.empWageDays();
+                employee.empWageDays();
                 break;
             case 6:
-                Employee.employeeWageMonthly();
+                employee.employeeWageMonthly();
                 break;
-            default:
-                System.out.println("Choose the Correct Option");
+            case 7:
+                employee.calculateEmpWageForCompany("DMart", 20,20,100);
+                break;
         }
     }
 }
